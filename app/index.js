@@ -1,46 +1,25 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 import {
-  StyleSheet,
   Text,
   View,
   Image
-} from 'react-native';
+} from 'react-native'
 
-export default class ExTra extends Component {
-  render() {
+import UnauthContainer from './layouts/unauth/index'
+
+class ExTra extends Component {
+  render () {
+    // if ()
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to ExTra!
-        </Text>
-        <Text style={styles.instructions}>
-          The simple expense tracker from Black Globe
-        </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
-	</Text>
-      </View>
-    );
+      // <View>
+      //   <Text>
+      //     Welcome to ExTra!
+      //   </Text>
+        <UnauthContainer />
+      // </View>
+    )
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
+export default ExTra

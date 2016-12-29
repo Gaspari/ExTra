@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "576305162670",
+    "project_id": "firebase-extra"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576305162670:android:1028f8fb3149cf01",
+        "android_client_info": {
+          "package_name": "com.blackglobe.expensetracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-91PeY-YHNcV_aXhCuD4dnN-xkuenF98"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
