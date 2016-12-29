@@ -1,4 +1,7 @@
-import ExTra from './app/index';
-import { AppRegistry } from 'react-native';
+// @flow
 
-AppRegistry.registerComponent('ExTra', () => ExTra);
+import './App/Config/ReactotronConfig'
+import { AppRegistry } from 'react-native'
+import App from './App/Containers/App'
+
+AppRegistry.registerComponent('ExTra', () => App)
