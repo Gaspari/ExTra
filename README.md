@@ -1,2 +1,2 @@
 # ExTra
-Expense tracker
+Expense tracker in React Native.
