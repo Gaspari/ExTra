@@ -12,7 +12,8 @@ const ApplicationStyles = {
     mainContainer: {
       flex: 1,
       marginTop: Metrics.navBarHeight,
-      backgroundColor: Colors.transparent
+      flexDirection: 'column',
+      justifyContent: 'center',
     },
     backgroundImage: {
       position: 'absolute',
@@ -22,7 +23,6 @@ const ApplicationStyles = {
       right: 0
     },
     container: {
-      flex: 1,
       paddingTop: Metrics.baseMargin
     },
     section: {

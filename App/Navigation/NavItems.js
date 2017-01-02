@@ -49,6 +49,18 @@ export default {
         />
       </TouchableOpacity>
     )
+  },
+
+  newButton (callback: Function) {
+    return (
+      <TouchableOpacity onPress={callback}>
+        <Icon name='plus'
+          size={Metrics.icons.small}
+          color={Colors.snow}
+          style={styles.newButton}
+        />
+      </TouchableOpacity>
+    )
   }
 
 }

@@ -1,10 +1,16 @@
 // @flow
 
 import { StyleSheet } from 'react-native'
-import { Metrics, ApplicationStyles } from '../../Themes/'
+import { Metrics, ApplicationStyles, Colors } from '../../Themes/'
 
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
+  title: {
+    fontSize: 40,
+    fontWeight: 'bold',
+    color: Colors.panther,
+    textAlign: 'center'
+  },
   logo: {
     height: Metrics.images.logo,
     width: Metrics.images.logo,
@@ -12,5 +18,11 @@ export default StyleSheet.create({
   },
   centered: {
     alignItems: 'center'
+  },
+  footer: {
+    color: Colors.frost
+  },
+  footerWrapper: {
+    marginTop: 20
   }
 })

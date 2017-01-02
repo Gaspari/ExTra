@@ -14,6 +14,11 @@ export default StyleSheet.create({
     marginTop: Metrics.baseMargin,
     marginLeft: Metrics.baseMargin
   },
+  newButton: {
+    ...navButton,
+    marginTop: Metrics.baseMargin,
+    marginLeft: Metrics.baseMargin
+  },
   searchButton: {
     ...navButton,
     marginTop: Metrics.section,

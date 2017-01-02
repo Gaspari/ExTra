@@ -1,7 +1,7 @@
 // @flow
 
 import React, { Component } from 'react'
-import { Scene, Router } from 'react-native-router-flux'
+import { Actions as NavigationActions, Scene, Router } from 'react-native-router-flux'
 import Styles from './Styles/NavigationContainerStyle'
 import NavigationDrawer from './NavigationDrawer'
 import NavItems from './NavItems'
@@ -9,6 +9,8 @@ import CustomNavBar from '../Navigation/CustomNavBar'
 
 // screens identified by the router
 import PresentationScreen from '../Containers/PresentationScreen'
+import ExpenseListScreen from '../Containers/ExpenseListScreen'
+
 import AllComponentsScreen from '../Containers/AllComponentsScreen'
 import UsageExamplesScreen from '../Containers/UsageExamplesScreen'
 import LoginScreen from '../Containers/LoginScreen'
@@ -45,6 +47,9 @@ class NavigationRouter extends Component {
 
             {/* Custom navigation bar example */}
             <Scene key='deviceInfo' component={DeviceInfoScreen} title='Device Info' />
+
+            <Scene key='expenseListScreen' component={ExpenseListScreen} title='Expenses' renderRightButton={NavItems.newButton.bind(false, NavigationActions.newExpense)} />
+            <Scene key='expenseNewScreen' component={ExpenseNewScreen} title='NewExpense' />
           </Scene>
         </Scene>
       </Router>
